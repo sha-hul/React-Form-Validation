@@ -1,0 +1,42 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.input-form{
+  width: 100vw;
+  height: 100vh;
+  background-color: coral;
+  display: grid;
+  place-items:center;
+}
+.input-form div{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.input-form h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow:2px 3px 4px cornsilk;
+}
+.input-form input{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 8px;
+  padding: 6px 20px;
+  color: rgb(46, 209, 46);
+  background-color: blanchedalmond;
+}
+.input-form button{
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 2px double orange;
+  transition: 1s all;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.input-form button:hover{
+  background-color: black;
+  color: white;
+}
