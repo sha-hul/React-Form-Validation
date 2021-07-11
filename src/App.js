@@ -132,3 +132,75 @@ const{value,name}=event.target
     )
 }
 export default App;
+
+//form shows the valid after submit to the backend
+
+// import React, { useState } from "react";
+// let App=()=>{
+//     let [curValue,upValue]=useState({
+//         fname:"",
+//         lname:"",
+//         email:"",
+//         number:""
+//     });
+//     let [curVal,upVal]=useState(
+//         {       
+//          fname:"",
+//         lname:"",
+//         email:"",
+//         number:""
+//     }
+//     );
+//     let inputName=(event)=>{
+//         let{value,name}=event.target;
+//         upValue((preValue)=>{
+//             return{
+//                 ...preValue,
+//                 [name]:value
+//             }
+//         })
+//     }
+//     let show=(event)=>{
+//         //for remains stable 
+//         event.preventDefault();
+//         upVal(curValue)
+//     }
+//     return(
+//         <>
+//         <div className="input-form">
+//         <form onSubmit={show} >
+//             <div>
+//                 <h1>{curVal.fname} {curVal.lname}</h1>
+//                 <p>{curVal.email}</p>
+//                 <p>{curVal.number}</p>
+//                 <input type="text"
+//                  value={curValue.fname}
+//                  name="fname"
+//                  placeholder="Enter the name..."
+//                  onChange={inputName} />
+//                 <input type="text"
+//                  name="lname" 
+//                  value={curValue.lname}
+//               placeholder="enter your last name..."
+//                  onChange={inputName}/>
+//                   <input type="text"
+//                  autoComplete="off"
+//                  value={curValue.email}
+//                  name="email"
+//                  placeholder="Enter the email..."
+//                  onChange={inputName} />
+//                   <input type="number"
+//                  autoComplete="off"
+//                  value={curValue.number}
+//                  name="number"
+//                  placeholder="Enter the mobile number..."
+//                  onChange={inputName} />
+//                 <button type="submit" >Send 🙋 </button>
+//             </div>
+//         </form>
+//         </div>
+//         </>
+//     )
+// }
+
+// export default App;
